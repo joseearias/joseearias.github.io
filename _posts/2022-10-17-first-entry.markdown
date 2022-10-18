@@ -33,4 +33,4 @@ I can say that this week was a really fruitful one, and without a doubt my favor
 
 [code-jam2]: https://codingcompetitions.withgoogle.com/codejam/round/0000000000877ba5/0000000000aa8e9c#problem
 
-https://github.com/joseearias/codejam2022/blob/main/round1A/doubleoronething.py
+[py-solution]: https://github.com/joseearias/codejam2022/blob/main/round1A/doubleoronething.py
