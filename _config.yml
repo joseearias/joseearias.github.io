@@ -21,9 +21,9 @@
 title: José Arias' Blog
 email: j.ariascanto@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi! My name is José Arias. I'm a CS student part of Encora's
+  Apprentice Program. In this blog I'll journal all the stuff
+  that I learn each week during this journey.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://joseearias.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
