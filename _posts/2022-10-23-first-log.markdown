@@ -48,7 +48,7 @@ We can see that if there are strings where the same two or more characters are n
  
 The difference with this case would be when the next character that isn’t repeated is smaller in order than the repeated character. For example, with the string ‘LOOK’, the obtained string ‘LOOK’ is smaller than the strings ‘LOOOK’ or ‘LOOOOK’. So we can say that if after a repetition of characters there’s a smaller character than the previous ones then we don’t have to duplicate any of the repeated characters.
  
-We can see that we can just iterate through each character on the string *S* and apply these rules to find the best option possible, instead of finding each and every possible combination of strings. This requires just a *for* loop of size of S repetitions. That means a time complexity to solve an *S* string would be ***O(|S|)*** with *|S|* being the number of characters in *S*.
+We can see that we can just iterate through each character on the string *S* and apply these rules to find the best option possible, instead of finding each and every possible combination of strings. This requires just a *for* loop of size of S repetitions. That means a time complexity to solve an *S* string would be ***O(\|S\|)*** with *\|S\|* being the number of characters in *S*.
  
 Here is the code for the implementation of my solution.
 
@@ -101,7 +101,7 @@ We can see that there’s no point in checking the last character because if we 
  
 ## ALTERNATIVE SOLUTIONS
 
-For my first solution I considered just using Python functionality of `min()` to detect the first string in alphabeticar order of a list containing each and every possible string obtainable. But it is intuitive to notice this approach of calculating and saving each possible string wouldn’t be very efficient, as if we have a string of size *S* the possible number of strings obtainable would be *2^S^*.
+For my first solution I considered just using Python functionality of `min()` to detect the first string in alphabeticar order of a list containing each and every possible string obtainable. But it is intuitive to notice this approach of calculating and saving each possible string wouldn’t be very efficient, as if we have a string of size *S* the possible number of strings obtainable would be *2<sup>S</sup>*.
 
 [codejam]: https://codingcompetitions.withgoogle.com/codejam/round/0000000000877ba5/0000000000aa8e9c#problem
 [solution]: https://github.com/joseearias/codejam2022/blob/main/round1A/doubleoronething.py
