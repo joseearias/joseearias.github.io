@@ -5,8 +5,6 @@ date:   2022-10-17 19:09:15 -0500
 categories: jekyll update
 ---
 
-OVERVIEW
-
 Here I provide a proposed solution to the problem “Double or One Thing”, a problem that was part of the 2022 edition of Code Jam, a competition made by Google to prove yourself and your problem solving skills. The details about this problem can be found [here][codejam] and the code for my solution [here][solution]. If you have any question regarding my solution, please reach out to me.
  
 ## CONTEXT
