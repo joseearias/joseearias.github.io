@@ -18,17 +18,6 @@ Edges (Passages) = ΣDegrees/2
 
 For this type of problems there is no pure scientific correct way of solving, here you need to implement enough heuristics so that you are fairly certain that you are close to a good estimate. 
 
------------- 
-
-The first approach was to just teleport and visit 8000 random chosen vertices, using all of them to estimate the average degree of all the vertices, this kind of works, but if the graph is in a star shape where all of the passages connect to a center, there is a high chance you don’t hit the center by teleporting, causing the sample to average every degree to 1. 
-One way to fix this is to teleport once, then walk once, so in case of a star your chances of hitting the center is 100%, and not just a tiny fraction. Like this: 
-Repeat 4000 times: 
-
-Randomly teleport to an unexplored vertex  
-
-Walk 1 time to a random neighbor 
-
-In order to be able to teleport to an unexplored vertex, to maximize chances of seeing something new we need to use a set, which will let us store unseen places and to ignore the ones we already visited thanks to its property of hashing. This will also result in an optimized solution since the look up and insertion time complexity of the set is of O(1) 
 
 ## CONTEXT 
 
