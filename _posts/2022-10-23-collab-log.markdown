@@ -14,6 +14,7 @@ Punched Cards is a problem that deals with array manipulation, where given the i
 
 Here is an example with R=3 and C = 4: 
 
+```
 . . + - + - + - + 
 . . | . | . | . | 
 + - + - + - + - + 
@@ -21,6 +22,7 @@ Here is an example with R=3 and C = 4:
 + - + - + - + - + 
 | . | . | . | . | 
 + - + - + - + - + 
+```
 
 ## CONTEXT  
 
