@@ -6,7 +6,9 @@ categories: jekyll update
 ---
 Learning how to work as a team is not a piece of cake.
 
-OVERVIEW 
+# PROBLEM 5. Twisty Little Passages
+
+## OVERVIEW 
 
 Twisty Little Passages is a problem that deals with probability and importance sampling. You are given the total rooms and the number of operations that you can do for every case. You need to implement a way of asking the user every move you want to do by teleporting and walking a total of K times, getting all the degrees possible and also a good estimation of a degree average, this in case there is still rooms left to visit by our K operations. 
 
@@ -28,7 +30,7 @@ Walk 1 time to a random neighbor
 
 In order to be able to teleport to an unexplored vertex, to maximize chances of seeing something new we need to use a set, which will let us store unseen places and to ignore the ones we already visited thanks to its property of hashing. This will also result in an optimized solution since the look up and insertion time complexity of the set is of O(1) 
 
-CONTEXT 
+## CONTEXT 
 
 What is Twisty Little Passages about? 
 
