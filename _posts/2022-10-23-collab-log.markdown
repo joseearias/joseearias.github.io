@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "Team Work"
-date:   2022-10-23 17:36:15 -0500
+date:   2022-10-23 15:36:15 -0500
 categories: jekyll update
 ---
-Working efficiently as a team is not always a piece of cake. But when there's enough commitment from all members, things can get done even against the odds. During the last two weeks, the rest of the Apprentice Team at Encora and I had to solve 8 different exercises from the 2022 edition of Code Jam in 4 different programming languages, these being Python, Kotlin, Dart and Typescript, so in total there were 32 different programs made by our team. We can say that even though there were a lot of obstacles and head scratching moments, we learned a lot of things about working as a team, and of course, we learned how frustrating it can be to make your code work in a new programming language but at the same time how regarding it ends up being. 
+Working efficiently as a team is not always a piece of cake. But when there's enough commitment from all members, things can get done even against the odds. 
+
+During the last two weeks, the rest of the Apprentice Team at Encora and I had to solve 8 different exercises from the 2022 edition of Code Jam in 4 different programming languages, these being Python, Kotlin, Dart and Typescript, so in total there were 32 different programs made by our team. We can say that even though there were a lot of obstacles and head scratching moments, we learned a lot of things about working as a team, and of course, we learned how frustrating it can be to make your code work in a new programming language but at the same time how regarding it ends up being. 
 
 This is a technical log of the approach that we as a team had for the exercises and at the same time I write a little bit about my contribution to this assignment.
 
