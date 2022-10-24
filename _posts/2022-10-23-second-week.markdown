@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Week 4"
-date:   2022-10-23 15:26:34 -0500
+date:   2022-10-23 16:26:34 -0500
 categories: jekyll update
 ---
 Two words describe this week and those words are ‘meetings’ and ‘headaches’ . My team and I had to get done for our deadline the coding problems that we were assigned last week. So this meant many meetings to organize ourselves and discuss what we needed to do to finish our assignments.
