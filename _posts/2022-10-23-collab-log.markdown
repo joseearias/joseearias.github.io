@@ -6,6 +6,30 @@ categories: jekyll update
 ---
 Learning how to work as a team is not a piece of cake.
 
+# PROBLEM 1. Punched Cards
+
+## OVERVIEW 
+
+Punched Cards is a problem that deals with array manipulation, where given the integers R = Rows and C = Columns describing the size of a punched card, you need to print the ASCII art drawing of it as described. 
+
+Here is an example with R=3 and C = 4: 
+
+. . + - + - + - + 
+. . | . | . | . | 
++ - + - + - + - + 
+| . | . | . | . | 
++ - + - + - + - + 
+| . | . | . | . | 
++ - + - + - + - + 
+
+## CONTEXT  
+
+What is Punched Cards about? 
+
+A secret team of programmers is plotting to disrupt the programming language landscape and bring punched cards back by introducing a new language called Punched Card Python that lets people code in Python using punched cards! Like good disrupters, they are going to launch a viral campaign to promote their new language before even having the design for a prototype. For the campaign, they want to draw punched cards of different sizes in ASCII art. 
+
+The ASCII art of a punched card they want to draw is similar to an R×C matrix without the top-left cell. That means, it has [(R⋅C) − 1] cells in total. Each cell is drawn in ASCII art as a period (.) surrounded by dashes (-) above and below, pipes (|) to the left and right, and plus signs (+) for each corner. Adjacent cells share the common characters in the border. Periods (.) are used to align the cells in the top row. 
+
 # PROBLEM 5. Twisty Little Passages
 
 ## OVERVIEW 
@@ -17,7 +41,6 @@ In our solution we implemented the following graph formula for edges (passages i
 Edges (Passages) = ΣDegrees/2 
 
 For this type of problems there is no pure scientific correct way of solving, here you need to implement enough heuristics so that you are fairly certain that you are close to a good estimate. 
-
 
 ## CONTEXT 
 
