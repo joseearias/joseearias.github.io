@@ -131,7 +131,7 @@ function runAllTests(input: string[]) {
 }
 ```
 
-We can clearly see that there are five loops with at most the maximum value between the number of rows and columns operations each. So we have a time complexity of **O(<sup>max(|r| | |s|)</sup>)** being r and s the number of rows and columns of the card respectively.
+We can clearly see that there are five loops with at most the maximum value between the number of rows and columns operations each. So we have a time complexity of **O(max(|r| | |s|))** being r and s the number of rows and columns of the card respectively.
 
 
 # PROBLEM 5. Twisty Little Passages
@@ -142,7 +142,7 @@ Twisty Little Passages is a problem that deals with probability and importance s
 
 In our solution we implemented the following graph formula for edges (passages in problem): 
 
-Edges (Passages) = ΣDegrees/2 
+Edges (Passages) = Σ(Degrees/2)
 
 For this type of problems there is no pure scientific correct way of solving, here you need to implement enough heuristics so that you are fairly certain that you are close to a good estimate. 
 
@@ -160,6 +160,125 @@ Walk: You choose to be moved to a uniformly chosen random neighbor of the curren
 
 After each move, you are told the vertex number and the number of incident edges. With this information you have to estimate the number of edges in the graph in an approximation error of 33.3%, and you are to succeed in at least 90% of the test cases. 
 
+## SOLUTION
+
+For this problem some of us needed to dust off some of our discrete mathematics classes knowledge. The problem is basically a graph theory problem with a little bit of probability added to it. We need to see the rooms in the cave as nodes in a graph and each passage from a room as an edge from a node. So it's clear to see that this problem could be solved easily if we had a way to know how many passages each room has as we would only need to sum all passages from all rooms and divide the result by 2. But because we only have K operations allowed to check the number of passages from each room, we need to find the optimal way to make use of our permitted operations, these being the ones mentioned in the context of the problem. 
+
+To solve this dilemma, we can divide the number of times we make each operation into a 50/50, as if the number of teleportation grows, the probability of not traveling to each room grows as well. But at the same time it would be a problem if we only walked into each room, as we would necessarily have to walk into rooms already visited. Having the same number of operations per permitted operation makes it less possible to visit a room we already have. So for K operations, K/2 the times we walk into a room and K/2 are the times we teleport into a "random" room.
+
+Now we can have a counter of the passages for each new room we visit that we haven't been in, and have an inventory of the rooms we haven't visited yet. We can add all the passages from each new visited room to the counter and take that room off from our inventory. Once all operations have been done we can just add the sum from our counter to the average of passages we have seen on the visited rooms times the number of elements left in our inventory, and the result from that operation divided by two to get the estimated number of passages from the cave.
+
+Here is the implementation for the solution on Typescript.
+
+```typescript
+
+declare var process: any;
+declare var require: any;
+
+// using module 'readline'
+const readline = require('readline');
+// creates an interface to receive input and print output
+let rl = readline.createInterface({
+    input: process.stdin, 
+    output: process.stdout,
+    terminal: false
+});
+
+// function to parse strings into two different variables
+const parseInteger = (input: string) => {
+    let [a, b] = input.split(' ').map((str) => Number(str))
+    return [a, b]
+}
+
+var candidates = new Set();
+
+let T: number;                  // number of cases
+let counter: number = 0;        // counts the number of cases solved
+let case_counter: number = 0;   // counter used in each individual case
+let part: string = "first";     // used to divide each case in two different parts
+
+let [N, K]: [number, number] = [0, 0];
+let [R, P]: [number, number] = [0, 0];
+
+let degree = 0;
+let degree_T = 0;
+let count_T = 1;
+
+rl.question('', (cases) => {
+    // Assigns T cases through line of input
+    T = Number(cases)
+
+    rl.on('line', (input) => {
+        // Parses number of rooms and number of operations
+        if (part === "first") {
+            [N, K] = parseInteger(input)
+            // makes set of N elements from 1 to N
+            candidates = new Set()
+            for (let i = 1; i <= N; i++) {
+                candidates.add(i)
+            }
+            part = "second";
+
+        // Parses current room and observable passages
+        } else if (part === "second") {
+            [R, P] = parseInteger(input)
+            
+            // if K operations are done then end current case
+            if (case_counter === K) {
+                if (candidates.has(R)) {
+                    candidates.delete(R)
+                }
+                let degree_avg = degree_T / count_T
+                let result = Math.floor((degree + degree_avg * candidates.size) / 2)
+
+                console.log(`E ${result}`)
+
+                part = "first";
+                case_counter = 0;
+                counter += 1;
+
+            } else {
+                // checks if its the first R, P input
+                if (case_counter === 0) {
+                    if (candidates.has(R)) {
+                        candidates.delete(R)
+                    }
+                    degree = P
+                    degree_T = degree
+
+                    console.log('W')
+                } else if (case_counter % 2 === 0) {
+                    // walk
+                    console.log('W');
+                } else {
+                    // teleport
+                    let a = candidates.values().next()
+                    console.log(`T ${a.value}`);
+                    degree_T += P;
+                    count_T += 1;
+                }
+                // if room is in candidates delete it from set
+                if (candidates.has(R)) {
+                    candidates.delete(R)
+                    degree += P;
+                }
+                case_counter += 1;
+            }
+        }
+        if (counter === T) {
+            rl.close()
+        }
+
+    }).on('close', () => {
+        process.exit
+    })
+})
+```
+
 # PROBLEM 6. Double or One Thing
+
+The individual log for my solution of this problem can be found on another [post][doot].
+
+[doot]: https://joseearias.github.io/jekyll/update/2022/10/18/first-tech-log.html
 
 
