@@ -38,7 +38,101 @@ The ASCII art of a punched card they want to draw is similar to an R×C matrix w
 
 ## SOLUTION
 
-There's not much to say about the solution of this problem. We can divide the problem in two parts, one that prints the part of the punched card without the top-left cell.  
+There's not much to say about the solution of this problem. We can divide the problem in two parts, one that prints the part of the punched card without the top-left cell, and the other part prints the rest of the card. 
+
+For the first part we just need to create a loop that creates the string lines that represent the borders of each row and columns. These strings are built concatenating the characters '+' and '-' for one case, and '\|' and '.' for the other one. And after that we just print one of each with the string '..' added to the start of each line. After printing the first part of the card we move on to create the rest of the punched card.
+
+For the second part we have to make 2 diferent loops to create again the lines that define the borders of the rows and columns of the card. Each row and column is built again by the strings '+-' and '\|.'. The only detail is that we need to concatenate the last member of each string separately. Once we have saved these strings into variables we can print them with two different loops that draw the rest of the card. At the end we just need to print manually one more string to give the bottom border of the card.
+
+Here is my code for the implementation of the solution in Typescript.
+
+```typescript
+declare var require: any;
+declare var process: any;
+
+const readline = require('readline');
+let rl = readline.createInterface(process.stdin, process.stdout);
+
+// Defines an interface for the data needed for each test case
+interface TestData {
+    testNumber: number;
+    rows: number;
+    cols: number;
+}
+
+// Parses each line of input and split into the data needed for each case
+function parseInput(input: string[]) {
+    let line: number = 0;
+    
+    // Reads the number of test cases from the first line of input
+    const numCases = Number(input[line++]);
+
+    const testData: TestData[] = [];
+
+    for (let testNumber = 1; testNumber <= numCases; ++testNumber) {
+        // The first number of each line contains the number of rows of each case
+        // and the second number contains the number of columns.
+        const rows = Number(input[line].split(' ')[0]);
+        const cols = Number(input[line++].split(' ')[1]);
+
+        testData.push({testNumber, rows, cols});
+    }
+    return testData;
+}
+
+function runTestCase(data: TestData) {
+    // Prints the case number into the console
+    console.log(`Case #${data.testNumber}:`);
+
+    let card: string = '';
+    card = card.concat('..');
+
+    for (let i = 0; i < data.cols - 1; i++) {
+        card = card.concat('+-');
+    }
+    card = card.concat('+\n..');
+    for (let i = 0; i < data.cols - 1; i++) {
+        card = card.concat("|.");
+    }
+    card = card.concat('|');
+
+    // Prints the first row into the console
+    console.log(card);
+
+    let plus: string = '';
+    let bars: string = '';
+
+    // Creates the string for the '+' and '-' symbols
+    for (let i = 0; i < data.cols; i++) {
+        plus = plus.concat('+-');
+    }
+    plus = plus.concat('+');
+
+    // Creates the string for the '|' and '.' symbols 
+    for (let i = 0; i < data.cols; i++) {
+        bars = bars.concat('|.');
+    }
+    bars = bars.concat('|');
+
+    // Using the strings that we defined earlier we can create the rest
+    // of the punch card.
+    for(let i = 0; i < data.rows - 1; i++) {
+        console.log(plus)
+        if (i === data.rows) continue;
+        else console.log(bars);
+    }
+    console.log(plus);
+}
+
+function runAllTests(input: string[]) {
+    const testCases = parseInput(input);
+
+    testCases.forEach(runTestCase);
+}
+```
+
+We can clearly see that there are five loops with at most the maximum value between the number of rows and columns operations each. So we have a time complexity of **O(<sup>max(|r| | |s|)</sup>)** being r and s the number of rows and columns of the card respectively.
+
 
 # PROBLEM 5. Twisty Little Passages
 
@@ -65,3 +159,7 @@ Teleport: You choose to teleport to a vertex number of your choice
 Walk: You choose to be moved to a uniformly chosen random neighbor of the current vertex. 
 
 After each move, you are told the vertex number and the number of incident edges. With this information you have to estimate the number of edges in the graph in an approximation error of 33.3%, and you are to succeed in at least 90% of the test cases. 
+
+# PROBLEM 6. Double or One Thing
+
+
