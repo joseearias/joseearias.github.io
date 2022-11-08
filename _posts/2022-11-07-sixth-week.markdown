@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Week 6"
-date:   2022-10-17 18:39:15 -0500
+title:  "Week 6: Getting Things Done"
+date:   2022-11-07 18:39:15 -0500
 categories: weekly-update
 ---
 
