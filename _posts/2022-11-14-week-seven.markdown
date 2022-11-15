@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Week 7: An update"
-date:   2022-11-07 18:39:15 -0500
+date:   2022-11-14 18:39:15 -0500
 categories: weekly-update
 ---
 
