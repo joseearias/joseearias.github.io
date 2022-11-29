@@ -11,7 +11,7 @@ I can say that I learned a lot doing this application. There were times where an
 
 I will describe to the best of my abilities the whole application and how I built it. I can honestly say there are a lot of things I could improve on this project, but at the same time, I’m glad that I’m more prepared for future projects like this one. If there’s anything worth noting, please let me know, I’m open to any feedback or comment. Thanks in advance for reading this.
 
-FRONT END
+## FRONT END
 
 The front end consists of a Single Page Application (SPA) created with React.js framework. I used Material UI to use its pre-made components. The build tool I used for my application was Vite. 
 
@@ -19,7 +19,7 @@ To run the project just enter the command `npm run start`, and this will start a
 
 I splitted the whole application into different component folders that made it easier for me to organize my project. Here you can see the structure of the application on the next figure.
 
-![
+![Project structure](/assets/img/screenshot2.png)
 
 Here is the functionality of each component folder and their respective components on detail:x
 
@@ -32,9 +32,9 @@ Todos: This is the part that takes care of displaying the list of tasks and the 
 
 There is also a “store” folder that contains the Context API Provider, that lets consuming components subscribe to any context change .
 
-You can see a preview of the page of the website here.
+You can see a preview of the page here.
 
-![My helpful screenshot](/assets/img/screenshot1.png)
+![Website screenshot](/assets/img/screenshot1.png)
 
 I make use of the HTTP client “axios” to make HTTP requests to the back end API. All the logic involving the requests is inside the todo-context.jsx file.
 
@@ -48,9 +48,11 @@ By pressing the “+ NEW TODO” button we can open a modal that lets us create 
 
 Inside the datagrid displayed by the Todo component, I made it so that an edit and delete button are rendered for each element. Each of these buttons do what they’re supposed to. The delete button sends a DELETE request to a specific task endpoint and deletes it, after doing this it also deletes the task from the displayed tasks on the page. The edit button is a little bit more complex, as when clicked it calls a handler function that opens up a modal to edit the task.
 
+![Todo List](/assets/img/screenshot3.png)
+
 The Stats component calculates the average of the completion time of all tasks, and the average of the task by their priority. This is all done on the front end. The component consumes the tasks given by the Context API, and using the React hook `useEffect`, everytime there is a change in the list, like adding or deleting a task, the component calculates and displays the new averages. The component indicates if there’s no completed task with a given priority. 
 
-BACK END
+## BACK END
 
 The back end of the application is a REST api that implements all the basic HTTP CRUD methods, these being GET, POST, PUT and DELETE. This API was built with Java and the Spring Boot framework. It also makes use of Maven as its building tool.
 
@@ -64,26 +66,28 @@ The application is divided into three parts, the entity package that defines the
 
 The endpoints and its methods are the following:
 
-GET `/api/todos`: gets all the current stored tasks from the repository.
-POST `/api/todos`: allows you to create a new task.
-GET `/api/todos/{id}`: gets task with Id equals to the parameter received.
-PUT `/api/todos/{id}`: lets you edit and update a stored task from the repository.
-DELETE `/api/todos/{id}`: deletes task with Id equals to the parameter received.
-PUT `/api/todos/{id}/done`: marks a task as done and creates a date of when the task was completed.
-PUT `/api/todos/{id}/undone`: marks a task as undone and deletes the date of when the task was completed.
+- GET `/api/todos`: gets all the current stored tasks from the repository.
+- POST `/api/todos`: allows you to create a new task.
+- GET `/api/todos/{id}`: gets task with Id equals to the parameter received.
+- PUT `/api/todos/{id}`: lets you edit and update a stored task from the repository.
+- DELETE `/api/todos/{id}`: deletes task with Id equals to the parameter received.
+- PUT `/api/todos/{id}/done`: marks a task as done and creates a date of when the task was completed.
+- PUT `/api/todos/{id}/undone`: marks a task as undone and deletes the date of when the task was completed.
 
 For the validations I used the Bean Validation framework, which gives a clean and ready to use implementation to validate data. These are some of the annotations I used for the validations:
 
+- @notNull: Makes sure the data passed to the constructor is not null
+- @size: You can pass it a max and a min argument, which specify the valid range of size of the value to be accepted.
+- @notBlank: This annotation makes sure that the data passed through is not empty.
 
-
-@notNull: Makes sure the data passed to the constructor is not null
-@size: You can pass it a max and a min argument, which specify the valid range of size of the value to be accepted.
-@notBlank: This annotation makes sure that the data passed through is not empty.
+![annotations](/assets/img/screenshot4.png)
 
 When a request doesn’t pass the required constraints then the request is answered with  a stylized JSON response that gives a detail of the invalidated data with a 400 status code. In this case, the message giving a context of the bad request is given by the arguments passed to the validation annotation.
 
 The sorting implementation requires a little bit more work. By passing a request parameter `filterBy` we can sort our tasks depending on their priorities. There’s also a basic filtering functionality implemented that returns a filtered list of tasks depending on the request parameters passed to the controller.
 
 Pagination is implemented and working on the API. When passing a GET request to the `/api/todos/` endpoint with the request parameter `page`, like for example `/api/todos?page=1` we get a “page” consisting of 10 elements of the to-do saved on the repository. There’s validations in case a bad parameter is passed to the function. This pagination functionality is implemented with the next method.
+
+![pagination](/assets/img/screenshot5.png)
 
 I didn’t finish the tests so if there’s anything that I didn’t do it's that. I think with a day or two more I could've implemented the test but I didn’t have enough time to finish it. So there is that. I also think the back end of my application is the one lacking the most in quality but I think with a week or two more I can easily learn how to implement the functionalities that I couldn’t implement.
