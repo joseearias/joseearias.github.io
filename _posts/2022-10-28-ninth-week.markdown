@@ -24,12 +24,12 @@ I usually use this approach when coding with other frameworks, but this time I d
 
 If I had to start working on the application from the beginning what I would do would be this:
 
-Don’t get stuck too much on tutorials if you’re learning a new tool, watch or read a couple of guides and just start working on your project.
-If working on the full stack of an application, start by having at least an idea of how the communication between both parts will be. 
-Like I mentioned, I would start by working on the back end of the application, because after doing so you already have data to communicate when starting the front end.
-Start making your tests as soon as possible. You can even code your tests before starting to code your application. This will save you a lot of time on the run.
-Once you have a substantial part of the back end you can start by implementing the most basic functionalities on the front end. Just so that you can make changes accordingly to the back end.
-Keep doing what you’re doing until you have the final product.
+1. Don’t get stuck too much on tutorials if you’re learning a new tool, watch or read a couple of guides and just start working on your project.
+2. If working on the full stack of an application, start by having at least an idea of how the communication between both parts will be. 
+3. Like I mentioned, I would start by working on the back end of the application, because after doing so you already have data to communicate when starting the front end.
+4. Start making your tests as soon as possible. You can even code your tests before starting to code your application. This will save you a lot of time on the run.
+5. Once you have a substantial part of the back end you can start by implementing the most basic functionalities on the front end. Just so that you can make changes accordingly to the back end.
+6. Keep doing what you’re doing until you have the final product.
 
 I hope that in my next web development projects I can follow these steps so that I can make my life much easier. 
 
