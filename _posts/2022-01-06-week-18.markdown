@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Week 18"
+date:   2023-01-06 12:39:15 -0500
+categories: weekly-update
+---
+
+There's been a lot going on in the last few weeks, and finally, after more than a month of working with my team on our assigned application we have finally finished it. Honestly, there were instances where I asked myself if I was cut to do this, but now I can say it was all worth it, the good, the bad and the ugly moments. 
+
+Let’s start by saying that this was one of the more educational and challenging things I’ve done in my life. Working with a team is not the same at all as working by yourself. For someone like me who has been working by myself on all the projects I’ve done until now I figured out there would be many lessons during this assignment, and there were actually tons of them.
+
+For this project I ended up working more on the front end of the application than anything else. My React skills improved a lot and now I feel that I can work at a much faster pace than before. I also had the chance to hone my Redux skills, as I haven’t used it much before. I can say that at first it seemed too much of a hassle for the benefits it gave, but at the end I realized how much it helped using it for our project. 
+
+Even though I felt I improved my React skills a lot, there were tons of times where I felt like  a newbie. I hit the wall many times, and needed to spend hours trying to fix a mistake. And some nights I had to go to sleep in the chance of finding an answer to my blockers in my sleep time.
+
+One of the most difficult moments I had was realizing that sometimes the lack of communication could impact how the rest of the team worked. It’s necessary to have a clear and detailed communication with your time. Being open and communicative with your team at all times is essential if you don’t want problems crawling later on. There are times where just a heads up to your teammates about the struggles you’re facing can help to solve whatever issue it may come up with the project at hand.
+
+This really was a fruitful experience, and even though there were mistakes along the way I can safely say that I know by now what to do better next time I’m in the same position. And I think that’s the beauty of coding. You will make mistakes over and over again, but if you keep going you will someday notice how much your skills have improved over time.
+
+I realized that there is tons of stuff I need to learn. I’ve never been more sure of this statement now than ever before. When veteran programmers tell you that the more you learn the more you realize you don’t know yet, can’t be more real for me now. But knowing that actually makes me want to learn much more about this craft. Going through your obstacles and getting better every time should be the most important thing. For everyone starting their coding journey, don’t give up. One day you will realize how much improvement you have done since the beginning.
+
+For the weeks to come I want to apply all the things I learned during this last month. I’m excited for what is to come, because I know next time I will do better. And that’s what matters most of the time. Keep showing up and never throw the towel. 
+
+See you next week!
+
+PD. Before I finish this post I want to show my appreciation for my team that through sleepless nights and restless days they went all out during this whole journey. Without them this wouldn’t have been possible and the effort and resilience they showed is admirable. So thank you, guys!
