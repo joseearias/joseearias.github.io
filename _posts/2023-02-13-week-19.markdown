@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Week 19"
+date:   2023-02-13 12:39:15 -0500
+categories: weekly-update
+---
+
+This was the first week after working with a team on a complete web application. We didn’t have to wait too long for another assignment because just a couple of days after making our final delivery our next instructions arrived. 
+
+For the next phase in our apprentice program we are instructed to get our hands into the open source software community. So for this assignment we have to make our first big contribution to a project and document the whole ordeal. 
+
+I have to say this is a really exciting assignment for me because I’ve been interested in contributing to an open source project for a long time. I’ve been fascinated with open source software since I learned about it because what isn’t cool about a project maintained by hundreds or even thousands of people just for the sake of it, mostly without any monetary benefit. This is the first time contributing to a big project, and just at first glance it seems intimidating, but I think it will be a very rewarding experience. I hope this is just the first of many contributions to projects.
+
+On the more technical side of things I got the chance to keep practicing and learning more stuff about React. One of the things I got the chance to do is checking out what the Context API is and why it’s used. Basically Context API is a React implementation that lets the user manage the state and share it across the whole application. Works similar to Redux would on any other React application, the difference being that it is simpler and less cumbersome to implement than Redux would be on complex applications. This doesn’t mean one should use Context whenever, because for most cases Redux would be the ideal solution. 
+
+Context API works best when the state is not changed too many times throughout the application lifespan. This is because everytime a context state changes, all the components that consume that context will then re-render, which can make your application not so optimal. This wouldn’t be the case when dealing with states or data that doesn’t change too much, like user authentication or themes. In those cases Context API would be a valid alternative to Redux. 
+
+Other than Context API, I also learned a little bit about Next.js, which is a framework that works together with React to enable server-side rendering, which means the server reads through code and tells the browser what to display on the page. This creates a faster and more pleasant experience for the user. I want to hold on just a couple of weeks more before I dig deeper into Next.js because I want to have enough time for my current assignment and to keep chiseling my vanilla React knowledge.
+
+I also had the chance of learning a little bit about Selenium for automating web application tests. I’ve used some other automation tools in the past like Jenkins, but Selenium works best to validate a web application across several browsers and platforms. I’m just getting started on it but I can see what would be useful when developing and testing applications.
+
+For this week I want to focus on making my first contribution for this phase. After that I’m planning on choosing the projects in which I want to contribute. I’m a bit nervous about what is to come but I know that I will learn a lot from this experience just like every other thing I’ve worked on during the apprentice program. 
+
+See you next week. Thanks for reading!
+
+
