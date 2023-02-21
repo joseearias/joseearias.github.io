@@ -9,18 +9,23 @@ This is the technical log for my first open source contribution. As my first con
 
 The issue to be solved were a couple of broken links that showed a 404 error page on screen when visited. 
 
-Issue: (https://github.com/GoogleChrome/web.dev/issues/9244)
-Pull Request: (https://github.com/GoogleChrome/web.dev/pull/9614)
+Issue: https://github.com/GoogleChrome/web.dev/issues/9244
+
+Pull Request: https://github.com/GoogleChrome/web.dev/pull/9614
 
 Date: 2023-02-19
 
 ## Steps Taken:
 
-Issue Analysis - I started by analyzing the issue reported in the repository. The problem seemed to be two links that were not functioning correctly inside the Identity section of web.dev. The links were showing a 404 error page. So the first step was checking where those links were written on the actual code.
+*Issue Analysis* - I started by analyzing the issue reported in the repository. The problem seemed to be two links that were not functioning correctly inside the Identity section of web.dev. The links were showing a 404 error page. So the first step was checking where those links were written on the actual code.
+
+![Broken links](/assets/img/fc-twolinks.png)
 
 *Code Review* - I went through the codebase to see where the issue could potentially be, and found that there was a problem with how the routes were implemented with i18n. In the json file detailing the routes for the identity section were the URL for link. There seemed to be a problem with how the nested routes were interpreting the absolute path.
 
 *Code Changes* - I implemented the proposed solution by making the necessary code changes to the identity.js file. This was made by putting the correct absolute URLs into the broken links. I tested the changes locally to make sure they were working as expected.
+
+![Code](/assets/img/fc-code.png)
 
 *Pull Request Creation* - A pull request was created on GitHub with the code changes that I made. I included a detailed description of the changes made.
 
