@@ -9,9 +9,9 @@ This is the technical log for my first open source contribution. As my first con
 
 The issue to be solved were a couple of broken links that showed a 404 error page on screen when visited. 
 
-Issue: https://github.com/GoogleChrome/web.dev/issues/9244
+Issue: [GoogleChrome/web.dev/issues/9244](https://github.com/GoogleChrome/web.dev/issues/9244)
 
-Pull Request: https://github.com/GoogleChrome/web.dev/pull/9614
+Pull Request: [GoogleChrome/web.dev/pull/9614](https://github.com/GoogleChrome/web.dev/pull/9614)
 
 Date: 2023-02-19
 
