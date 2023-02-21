@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Week 20"
+date:   2023-02-20 19:39:15 -0500
+categories: weekly-update
+---
+
+This past week has been an exciting one for me. I had the opportunity to contribute to an open-source project for the first time, and it was an incredible learning experience. A lot of insight about how developers maintain and improve their projects was learned during the week, and that’s what I’ll write about a little bit in this post.
+
+As part of the assignment we have for the upcoming month, I decided to work on web.dev, a learning resource and open source project from Google Chrome. The issue wasn’t really complex, it was just a couple of broken links that needed to be fixed with their correct URL. This issue can be found [here](https://github.com/GoogleChrome/web.dev/issues/9244).
+
+After identifying the issue and coming up with a solution, I made the necessary changes to the code and submitted a pull request. The project maintainers were quick to review my code, and after addressing their comments, my pull request was merged into the project. You can find the pull request and its description [here](https://github.com/GoogleChrome/web.dev/pull/9614).
+
+Being my first contribution to an open source project, it ended up being a thrilling experience seeing my code being reviewed by the project maintainers. It gave me a chance to learn more about best practices in contributing and how to communicate effectively with other developers. It also let me dig a little bit deeper into a huge code source repository and find out how developers manage to organize all the code inside the project. 
+
+Contributing to an open-source project was a significant step for me, and it has sparked a desire to continue contributing to other projects in the future. Over the coming weeks, I plan to contribute to at least two more projects (these two projects being a requirement for our current assignment), and I'm excited about the learning opportunities that come with working on new projects.
+
+We are supposed to pick two main stacks for our contributions, one of them being Java and another one of our choice. I’ve been debating about which programming language or framework I should pick for this, and I came to the conclusion that I will use Javascript, because even though I feel more comfortable using Python, I want to learn Javascript as much as possible as I can.
+
+Apart from my open-source contribution, I have also been focusing on learning more about React Router and AWS in general. React Router is an essential tool for developing web applications with React, and although I’ve used it in the past, I'm now seeing all the capabilities that it can offer. So I've taken the task of using it to create a more dynamic user experience for my past projects. 
+
+I’ve worked in the past with Azure and its cloud services, but I’ve been trying to learn more about AWS and the services it provides. AWS is also an incredibly powerful cloud platform that offers a wide range of services that can be used for web development. As I continue to learn more about AWS, I'm looking forward to incorporating these services into my projects to make them more scalable and efficient, and maybe see where I can apply these skills in the professional area.
+
+In conclusion, contributing to an open-source project was an incredible learning experience, and I'm excited to continue working on other projects in the future. I felt this was the push I needed to start getting my hands on the open source community and I’m really interested in seeing how much I can keep contributing to other projects I use on the day to day from now on. I also have to mention that learning more about React each week and also about AWS this past week has also been an essential part of my growth as a web developer, and I'm looking forward to applying these skills to my future projects.
+
