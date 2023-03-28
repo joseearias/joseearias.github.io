@@ -6,13 +6,22 @@ categories: weekly-update
 ---
 
 This past week I’ve been getting my hands on my first “meaningful” contribution to an open source project. I say this because until now my only contribution to an open source project before this one was fixing some missing links on a page, and although it opened my eyes a little about open source contribution, I didn’t feel it as a challenge at the moment. But that changed quickly this week.
+
 I was assigned this week to an issue for the Wikimedia Commons Android App project. You can find details about the issue [here](https://github.com/commons-app/apps-android-commons/issues/5187). It’s my first time actually working on a mobile app project but that’s what makes this experience more rewarding, because I have the chance to not only get my first taste of what a huge codebase looks like but I also get to learn a new skill.
+
 Honestly getting started with open source contributions can be super intimidating at first. When starting to learn about programming and developing you sort of get through a point where you have built and code several of your own projects, and sometimes you ask yourself how different could your own projects look compared to large codebases used by big companies. This is not something that you can exactly get unless you actually work for one of these companies. But you can sort of get a similar idea by looking at repositories from a big open source project. 
+
 Take as an example the [Github page](https://github.com/jenkinsci) for the Jenkins Project repositories. There are several repositories each one containing tons of directories and files. Each repository has dozens, hundreds and even thousands of contributors. There is documentation for each part of each repository, they have their own guidelines and workflows for developers. And going through the source code one can see how much complexity there can be in some of these projects. All of this can make you ask yourself: “Where do I even start?”.
+
 I think there are several points to consider when getting into open source contribution:
+
 First, it’s normal to feel intimidated by the complexity of some projects. Not knowing where to even start to look or not having the slightest idea of how all the code files even relate to each other can be scary at first. But it’s important to have in mind that this happens to everyone at first and it’s important to not get discouraged by this. Even the smallest contribution can be of big help to the project. And most projects have really detailed documentation about how the code works, because most of the developers for these projects actually know how intimidating this can be without some guide to help you to start getting your hands on the code itself. 
+
 The next point to have is that most of the developers for these projects will be more than glad about answering the questions you have. Of course, it’s important to know how to ask meaningful and detailed questions and also how to look for answers before reaching out to others for help. 
 Also it’s important to know your capabilities and don’t expect to suddenly be capable of completing a super complex issue on your own at first or something on that matter. Know the stuff that you can contribute to but don’t be afraid of getting out of your comfort zone. The most important thing is that you don’t feel overwhelmed enough to leave your contribution unfinished. If not sure about what issue would be appropriate to solve, try to look for an issue with the tag “good first issue” or “newbie friendly” tag. These issues will usually be assigned to people getting their hands into open source collaboration for the first time. 
+
 And finally pick something a project that you feel excited to contribute to. This can be a project that you have previously used or are familiar with, some examples could be the repository for the React Native library or the repository for the Elasticsearch project. Not only will you be more motivated to get through the issue at hand but you will already be familiar in some capacity with how the project works which will make your life easier when diving into the source code.
+
 This is just the tip of the iceberg, and you will find tons of advice coming from more experienced developers on the internet but these for me are the most important ones. 
+
 This is all from me for this week. For the rest of the week I’ll focus on getting my pull request accepted and seeing what other projects or issues I can contribute to. Thanks for reading!
