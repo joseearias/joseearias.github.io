@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Week 26"
+date:   2023-04-03 19:39:15 -0500
+categories: weekly-update
+---
+
+For this week I am excited to share with you my latest experience during this apprenticeship program, which was completing my first big pull request for an open source project. As part of my internship, I was assigned to an issue for the Wikimedia Commons Android app project, an app that allows users to upload media to the Wikimedia Commons repository which hosts free-to-use images, sounds, videos and other media.
+
+Initially, I thought that this would be a relatively straightforward task. My task was to fix a bug that occurred whenever a non-logged-in user tried to access the details about an image's author. Whenever someone tried to do this, the app would crash. However, as I delved into the codebase, I realized that the problem was more complex than I initially thought. I had to spend several days studying the code and understanding how the app worked to identify the root cause of the issue.
+
+I think the main issue was that I hadn’t worked on an Android application previously, so I also spent some time trying to figure out how to actually work on the code and how to actually see the results of my changes to said code. And honestly I feel like I spent more time than what I should’ve on digging how Android development works. That’s a lesson that I learnt during this week, and that lesson is to not focus too much on trying to understand every little detail about a tool or technology you’re working with. Instead try to understand the basics and look up stuff as you need to. This will save you hours of your time.
+
+Talking specifically about the bug to fix I’ve to say like I mentioned previously that it ended up being more complex that what I thought initially. It took me a little while to comprehend where the main error was coming from. So after hours of checking the code to understand it as much as possible I finally got a clue of what was causing the app crash. And at first glance it seemed simple but as I started trying to fix solutions it became apparent that even though fixing the crash per se was easy, getting it work as planned required me to dig deeper into the code itself.
+
+The solution at first seemed actually too complex even for me to try by myself. I realized that if I wanted to actually get it to work as I planned I needed to add a lot of features to different parts of the code. But after talking with the maintainers of the code it seemed like they wanted a more simple solution, which ended up not being as elegant as I thought initially but it ended up just taking some lines of code to solve. 
+
+Overall, this was an excellent learning experience for me as a web developer. I learned a lot about debugging and troubleshooting code, as well as how to work with a large codebase and an existing development team. I am grateful for the opportunity to contribute to such an amazing project, and I look forward to continuing to contribute in the future to this and more projects.
+
+Thanks for reading!
